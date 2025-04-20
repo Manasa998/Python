@@ -3,9 +3,9 @@
 # 1) take inputs
 # 2) perform the required action
 # 3) then return the vaule
-def add(num , num1):
-    a = num + num1
-    return a
+def add(num , num1): # take inputs
+    a = num + num1   # perform the required action
+    return a         # then return the vaule 
 
 def sub(num , num1):
     b = num - num1
