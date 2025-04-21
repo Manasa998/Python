@@ -1,8 +1,8 @@
+import sys  # If I want to perform operations with command line arguments, I need to import the 'sys' module."
+import os   # if i want to store senstive data in code then import "OS" module
 #this is calculator program using functions
 #functions will follow the main rule 
-# 1) take inputs
-# 2) perform the required action
-# 3) then return the vaule
+
 def add(num , num1): # take inputs
     a = num + num1   # perform the required action
     return a         # then return the vaule 
@@ -23,8 +23,28 @@ def per(num , num1):
     e = num % num1
     return e
 
-print(add(23,34))
-print(sub(3,8))
-print(mul(5,8))
-print(div(5,6))
-print(per(5,7))
+num  = float(sys.argv[1])
+operation = sys.argv[2]
+num1 = float(sys.argv[3])
+
+if operation == "add":
+    output = add(num, num1)
+    print(output)
+
+if operation == "sub":
+    output = sub(num, num1)
+    print(output)
+
+if operation == "mul":
+    output = mul(num, num1)
+    print(output)
+
+if operation == "div":
+    output = div(num, num1)
+    print(output)
+
+if operation == "per":
+    output = per(num, num1)
+    print(output)
+
+password = os.getenv("password") # sensitive info
