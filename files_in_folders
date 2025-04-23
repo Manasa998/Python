@@ -1,0 +1,23 @@
+import os
+
+def list_of_files(folder):
+    try:
+        files = os.listdir(folder)
+        return files, None
+    except FileNotFoundError:
+          return None, "File not found"
+        
+def main():
+    folders = input("enter the folder names:" ).split()
+        
+    for folder in folders:
+        files, error_message = list_of_files(folder)
+        if files:
+            print(f"these are the files in {folder}:")
+            for file in files:
+                print(file)
+        else:
+                print(f"error in {folder}:{error_message}")
+
+if __name__ == "__main__":
+    main()
