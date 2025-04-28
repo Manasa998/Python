@@ -1,4 +1,4 @@
-# creating a dictionary
+#creating a dictionary
 my_dict = { "name": "manasa", "age" : "27", "city" : "Hyderabad"}
 #modifying and adding value
 my_dict["age"] = "26"
