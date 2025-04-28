@@ -1,0 +1,18 @@
+# creating a dictionary
+my_dict = { "name": "manasa", "age" : "27", "city" : "Hyderabad"}
+#modifying and adding value
+my_dict["age"] = "26"
+my_dict.update({"color" : "blue"})
+#deleting values
+del my_dict["name"]
+#checking key exist
+#instead of using "in" operator  we can use get() method """"""if my_dict.get("age")""""""
+if "age" in my_dict:
+    print("age is exist")
+else:
+    print("age is not exist")
+#iterating through key-value pair
+for key, value in my_dict.items():
+    print(f"{key} : {value}")
+#Accessing Value
+    
